@@ -23,6 +23,7 @@ $button-gradient: linear-gradient(135deg, $button-gr1 0%, $button-gr2 100%);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	box-shadow: $inner-shadow;
+	height: 300px;
 
 	h1,
 	h2,
@@ -33,6 +34,7 @@ $button-gradient: linear-gradient(135deg, $button-gr1 0%, $button-gr2 100%);
 		font-family: "Libre Baskerville", serif;
 		color: $header-color;
 	}
+
 
 	p {
 		font-family: "Lato", sans-serif;
@@ -47,23 +49,17 @@ $button-gradient: linear-gradient(135deg, $button-gr1 0%, $button-gr2 100%);
 		margin-left: auto;
 		margin-right: auto;
 	}
-}
 
-.button-container {
-	position: relative;
-	max-width: 200px;
-	font-family: "Lato", sans-serif;
-	text-shadow: $text-shadow;
-	background: $button-gradient;
-	color: $button-text;
-	border: 0;
-	box-shadow: $box-shadow;
-	border-color: hsla(0, 0%, 0%, 0%);
-	border-radius: 20px;
-	padding: 10px 20px;
+	.button-container {
+		position: absolute;
 
-	a {
-		color: inherit;
-		text-decoration: none;
+		button {
+			border-radius: $global-radius;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
 	}
 }
