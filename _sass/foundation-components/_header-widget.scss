@@ -1,43 +1,70 @@
 @import "/assets/fonts/imports.css";
 // @import url(https://raw.githubusercontent.com/NewSpectrum/Technovine-Site/main/_sass/foundation-components/_header-button.scss)
 
-$headr-color: 	hsl(0, 0%, 100%);
-$txt-color: 	hsl(0, 0%, 100%);
-$inner-shadow:	inset 2px 2px 5px hsla(0, 0%, 0%, 0.5);
-$txt-shadow: 	0.5px 0.5px 5px hsla(0, 0%, 0%, 0.5);
+//▸ Widget Properties
+$header-color: hsl(0deg, 0%, 100%);
+$txt-color: hsl(0deg, 0%, 100%);
+$inner-shadow: inset 2px 2px 5px hsla(0deg, 0%, 0%, 0.5);
+$txt-shadow: 0.5px 0.5px 5px hsla(0deg, 0%, 0%, 0.5);
+$widget-bg-color: hsla(0deg, 0%, 0%, 0.5);
+$widget-padding: 1rem 2.5rem 2rem 2.5rem;
+$sr-bg: hsl(18deg, 100%, 62%);
+$button-text: hsl(0deg, 0%, 100%);
+$button-gr1: hsl(18deg, 100%, 62%);
+$button-gr2: hsl(18deg, 80%, 45%);
+$box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 50%);
+$text-shadow: 0.5px 0.5px 1.5px hsla(0, 0%, 0%, 50%);
+$button-gradient: linear-gradient(135deg, $button-gr1 0%, $button-gr2 100%);
 
+.widget-container {
+	background-color: $widget-bg-color;
+	padding: $widget-padding;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: $inner-shadow;
 
-.header-widget {
-	position: relative;
-	align-items: center;
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	.widget-container {
-	    background-color: hsla(0, 0%, 0%, 0.5);
-	    padding: 1rem 2.5rem 2rem 2.5rem;
-	    border-radius: 20px;
-	    backdrop-filter: blur(10px);
-	    -webkit-backdrop-filter: blur(10px);
-
-		box-shadow: $inner-shadow;
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: "Libre Baskerville", serif;
-			color: white;
-		}
-
-
-		p {
-			font-family: "Lato", sans-serif;
-			font-size: 1rem;
-			color: $txt-color;
-		}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Libre Baskerville", serif;
+		color: $header-color;
 	}
 
+
+	p {
+		font-family: "Lato", sans-serif;
+		font-size: 1rem;
+		color: $txt-color;
+	}
+
+	.header-widget {
+		position: relative;
+		align-items: left;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.button-container {
+	position: relative;
+	max-width: 200px;
+	font-family: "Lato", sans-serif;
+	text-shadow: $text-shadow;
+	background: $button-gradient;
+	color: $button-text;
+	border: 0;
+	box-shadow: $box-shadow;
+	border-color: hsla(0, 0%, 0%, 0%);
+	border-radius: 20px;
+	padding: 10px 20px;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
 }
