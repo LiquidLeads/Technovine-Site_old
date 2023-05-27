@@ -23,7 +23,6 @@ $button-gradient: linear-gradient(135deg, $button-gr1 0%, $button-gr2 100%);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	box-shadow: $inner-shadow;
-	height: 300px;
 
 	h1,
 	h2,
@@ -52,7 +51,6 @@ $button-gradient: linear-gradient(135deg, $button-gr1 0%, $button-gr2 100%);
 
 	.button-container {
 		position: relative;
-		bottom: 30px;
 
 		button {
 			border-radius: $global-radius;
