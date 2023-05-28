@@ -14,6 +14,6 @@ group :jekyll_plugins do
 	gem 'jekyll-gist'
 	gem 'jekyll-paginate'
 	gem 'jekyll-asciidoc'
-	gem 'asciidoctor', '~> 2.0.18'
+	gem 'asciidoctor', '~> 2.0.20'
 	gem 'coderay', '1.1.3'
 end
