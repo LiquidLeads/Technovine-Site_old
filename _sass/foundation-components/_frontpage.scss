@@ -1,12 +1,12 @@
 //▸ Widget Properties
 $widget-container-bg-color: hsl(220, 3%, 83%);
-$text-colors: hsl(0, 0%, 0%);
+$text-colors: hsl(0, 0%, 100%);
 .widget-container {
 //	background-color: $widget-container-bg-color;
 	padding: $widget-padding;
 	border-radius: 17px;
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
+	//backdrop-filter: blur(10px);
+	//-webkit-backdrop-filter: blur(10px);
 	box-shadow: $inner-shadow;
 	margin-top: 20px;
 
