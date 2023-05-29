@@ -8,7 +8,7 @@ format: frontpage
         </div><!-- /.medium-4.columns -->
     </div><!-- /.row -->
 </div><!-- /#header-home -->
-
+<link rel="stylesheet" href="_sass\.testing\css\_frontpage.css">
 
 {% comment %}
 *
@@ -16,17 +16,26 @@ format: frontpage
 *
 {% endcomment %}
 <div class="row t60">
-	{% if page.widget1.image or page.widget1.video or page.widget1.title %}
+	<div id="widget1-container" class="widget1-container">
+		{% if page.widget1.image or page.widget1.video or page.widget1.title %}
 		{% include _frontpage-widget.html widget=page.widget1 %}
 	{% endif %}
-
-	{% if page.widget2.image or page.widget2.video or page.widget2.title %}
+	</div>
+	<div id="widget2-container" class="widget2-container">
+		{% if page.widget2.image or page.widget2.video or page.widget2.title %}
 		{% include _frontpage-widget.html widget=page.widget2 %}
 	{% endif %}
-
-	{% if page.widget3.image or page.widget3.video or page.widget3.title %}
+	</div>
+	<div id="widget3-container" class="widget3-container">
+		{% if page.widget3.image or page.widget3.video or page.widget3.title %}
 		{% include _frontpage-widget.html widget=page.widget3 %}
 	{% endif %}
+	</div>
+
+
+
+
+
 </div><!-- /.row -->
 
 
