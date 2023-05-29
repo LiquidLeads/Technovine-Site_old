@@ -1,6 +1,6 @@
 //▸ Widget Properties
 $widget-container-bg-color: hsl(220, 3%, 83%);
-$text-color: hsl(0, 0%, 0%);
+$text-colors: hsl(0, 0%, 0%);
 .widget-container {
 //	background-color: $widget-container-bg-color;
 	padding: $widget-padding;
@@ -23,6 +23,6 @@ $text-color: hsl(0, 0%, 0%);
 	p {
 		font-family: "Lato", sans-serif;
 		font-size: 1rem;
-		color: $text-color;
+		color: $text-colors;
 	}
 }
